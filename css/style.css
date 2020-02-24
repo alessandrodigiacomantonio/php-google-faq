@@ -16,6 +16,7 @@ html {
   width: 100%;
   border-bottom: 1px solid rgba(151,151,151,0.5);
   z-index: 1;
+  background-color: white;
 }
 .header__wrapper {
   padding: 2.2rem 2.2rem 0 2.2rem;
@@ -48,6 +49,10 @@ html {
   font-size: 1.5rem;
   font-weight: 400;
 }
+.header__navbar__google-account {
+  display: flex;
+  align-items: center;
+}
 .header__navbar__google-account__link  {
   font-size: 1.5rem;
 }
@@ -60,4 +65,10 @@ html {
 .footer {
   max-width: 975px;
   margin: 0 auto;
+}
+.main {
+  margin-top: 215px;
+}
+.main__section {
+  margin-top: 3rem;
 }

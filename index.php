@@ -93,7 +93,7 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
       foreach($db as $faqs) {
         $contator = 1;
         foreach($faqs as $faq) {
-          echo "<section data-number=".$contator.">";
+          echo "<section class='main__section' data-number=".$contator.">";
           foreach($faq as $k => $value) {
             if ($k == "question") {
               echo "<h2>$value</h2>";
