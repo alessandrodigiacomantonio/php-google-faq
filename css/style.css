@@ -88,8 +88,9 @@ html {
 .main__section__answer {
   font-size: 1.4rem;
   color: rgba(0,0,0,0.87);
-  margin-top: 2rem;
+  margin-top: 3rem;
   white-space: pre-wrap;
+  line-height: 3rem;
 }
 
 .footer,
