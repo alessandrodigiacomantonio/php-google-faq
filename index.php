@@ -109,18 +109,23 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
     ?>
   </main>
   <footer class="footer">
-    <nav class="footer__info">
-
-    </nav>
-    <div class="footer__language">
-      <img class="footer__language__icon" src="img/language-icon.png" alt="icona">
-      <select class="footer__language__selection" name="language-selection">
-        <option value="italian">Italiano</option>
-        <option value="english">English</option>
-        <option value="german">Deutsch</option>
-        <option value="french">Francais</option>
-        <option value="spanish">Español</option>
-      </select>
+    <div class="footer__wrapper">
+      <nav class="footer__info">
+        <h3 class="footer__info__page" data-name="google">Google</h3>
+        <h3 class="footer__info__page" data-name="all-about-google">Tutto su Google</h3>
+        <h3 class="footer__info__page" data-name="privacy">Privacy</h3>
+        <h3 class="footer__info__page" data-name="terms">Termini</h3>
+      </nav>
+      <div class="footer__language">
+        <img class="footer__language__icon" src="img/language-icon.png" alt="icona">
+        <select class="footer__language__selection" name="language-selection">
+          <option value="italian">Italiano</option>
+          <option value="english">English</option>
+          <option value="german">Deutsch</option>
+          <option value="french">Francais</option>
+          <option value="spanish">Español</option>
+        </select>
+      </div>
     </div>
   </footer>
 </body>
