@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+html {
+  font-size: 10px;
+  font-family: 'Poppins';
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(151,151,151,0.5);
+  z-index: 1;
+  background-color: white;
+}
+.header__wrapper {
+  padding: 2.2rem 2.2rem 0 2.2rem;
+}
+.header__privacy-terms {
+  display: flex;
+  align-items: center;
+}
+.header__privacy-terms__google-logo {
+  cursor: pointer;
+}
+.header__privacy-terms__privacy,
+.header__navbar__google-account__link {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #5f6368;
+  margin-left: 0.8rem;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar__site-pages {
+  display: flex;
+}
+.header__navbar__site-pages__page {
+  padding: 1.6rem 3.2rem 0.8rem 0rem;
+}
+.header__navbar__site-pages__page:last-child {
+  padding: 1.6rem 0 0.8rem;
+}
+.__page__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.header__navbar__google-account {
+  display: flex;
+  align-items: center;
+}
+.header__navbar__google-account__link  {
+  font-size: 1.5rem;
+}
+.--active-page {
+  color: #3367d6;
+  border-bottom: 2px solid #3367d6;
+}
+
+.main,
+.footer__wrapper {
+  max-width: 975px;
+  margin: 0 auto;
+}
+.main {
+  margin-top: 215px;
+}
+.main__section {
+  margin-bottom: 8rem;
+  padding: 1rem;
+
+}
+.main__section:hover {
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+.main__section__question {
+  font-size: 2.4rem;
+  color: #3c4043;
+}
+.main__section__answer {
+  font-size: 1.4rem;
+  color: rgba(0,0,0,0.87);
+  margin-top: 3rem;
+  white-space: pre-wrap;
+  line-height: 3rem;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.footer__language {
+  display: flex;
+  align-items: center;
+}
+.footer__language__icon {
+  margin-right: 0.5rem;
+}
+.footer__language__selection {
+  min-width: 150px;
+}
+.footer__info {
+  display: flex;
+}
+.footer__info__page {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(61,61,61,.8);
+  cursor: pointer;
+}
+.footer__info__page:not(:last-child):after {
+  content: "-";
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
+  cursor: default;
+}

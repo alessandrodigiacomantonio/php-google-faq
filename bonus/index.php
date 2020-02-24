@@ -91,20 +91,24 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
   <main class="main">
     <?php
       $counter = 1;
-      // ↓ foreach utilizzato per estrarre una ad una le varie faq nel database ↓
       foreach($db["faqs"] as $faq) {
-        echo "<section class='main__section' data-number=".$counter.">";
-        // ↓ foreach utilizzato per capire se si sta prendendo una domanda o una risposta ↓
+    ?>
+    <section class="main__section" data-number="<?php echo $counter; ?>">
+      <?php
         foreach($faq as $k => $value) {
           if ($k == "question") {
-            echo "<h2 class='main__section__question'>$value</h2>";
+      ?>
+      <h2 class='main__section__question'><?php echo $value; ?></h2>
+        <?php
           }
-          else {
-            echo "<p class='main__section__answer'>$value</p>";
-          }
-        }
-        echo "</section>";
-        $counter++;
+        else {
+        ?>
+      <p class='main__section__answer'><?php echo $value; ?></p>
+        <?php }
+      }?>
+    </section>
+    <?php
+      $counter++;
       }
     ?>
   </main>
