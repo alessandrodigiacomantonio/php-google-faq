@@ -90,21 +90,21 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
   </header>
   <main class="main">
     <?php
-      foreach($db as $faqs) {
-        $contator = 1;
-        foreach($faqs as $faq) {
-          echo "<section class='main__section' data-number=".$contator.">";
-          foreach($faq as $k => $value) {
-            if ($k == "question") {
-              echo "<h2 class='main__section__question'>$value</h2>";
-            }
-            else {
-              echo "<p class='main__section__answer'>$value</p>";
-            }
+      $contator = 1;
+      foreach($db["faq"] as $faq) {
+        // ↓ foreach utilizzato per estrarre una ad una le varie faq nel database ↓
+        echo "<section class='main__section' data-number=".$contator.">";
+        foreach($faq as $k => $value) {
+          // ↓ foreach utilizzato per capire se si sta prendendo una domanda o una risposta ↓
+          if ($k == "question") {
+            echo "<h2 class='main__section__question'>$value</h2>";
           }
-          echo "</section>";
-          $contator++;
+          else {
+            echo "<p class='main__section__answer'>$value</p>";
+          }
         }
+        echo "</section>";
+        $contator++;
       }
     ?>
   </main>
