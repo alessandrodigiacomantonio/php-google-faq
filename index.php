@@ -1,6 +1,6 @@
 <?php
   $db = [
-    faq => [
+    faqs => [
       [
         "question" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
         "answer" => "La recente decisione della Corte di giustizia dell'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi.
@@ -91,11 +91,11 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
   <main class="main">
     <?php
       $contator = 1;
-      foreach($db["faq"] as $faq) {
-        // ↓ foreach utilizzato per estrarre una ad una le varie faq nel database ↓
+      // ↓ foreach utilizzato per estrarre una ad una le varie faq nel database ↓
+      foreach($db["faqs"] as $faq) {
         echo "<section class='main__section' data-number=".$contator.">";
+        // ↓ foreach utilizzato per capire se si sta prendendo una domanda o una risposta ↓
         foreach($faq as $k => $value) {
-          // ↓ foreach utilizzato per capire se si sta prendendo una domanda o una risposta ↓
           if ($k == "question") {
             echo "<h2 class='main__section__question'>$value</h2>";
           }
