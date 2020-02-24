@@ -12,16 +12,42 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__privacy-terms">
-      <img class="header__privacy-terms__google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="Google">
-      <a class="header__privacy-terms__privacy" href="">Privacy e termini</a>
-    </div>
-    <div class="header__navbar">
-      <nav class="header__navbar__site-pages">
-
-      </nav>
-      <div class="header__navbar__google-account">
-
+    <div class="header__wrapper">
+      <div class="header__privacy-terms">
+        <img class="header__privacy-terms__google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="Google">
+        <a class="header__privacy-terms__privacy" href="">Privacy e termini</a>
+      </div>
+      <div class="header__navbar">
+        <nav class="header__navbar__site-pages">
+          <div class="header__navbar__site-pages__page" data-name="introduction">
+            <h3 class="__page__title">
+              Introduzione
+            </h3>
+          </div>
+          <div class="header__navbar__site-pages__page" data-name="norms">
+            <h3 class="__page__title">
+              Norme sulla privacy
+            </h3>
+          </div>
+          <div class="header__navbar__site-pages__page" data-name="terms">
+            <h3 class="__page__title">
+              Termini di servizio
+            </h3>
+          </div>
+          <div class="header__navbar__site-pages__page" data-name="tecnologies">
+            <h3 class="__page__title">
+              Tecnologie
+            </h3>
+          </div>
+          <div class="header__navbar__site-pages__page --active-page" data-name="faq">
+            <h3 class="__page__title">
+              Domande Frequenti
+            </h3>
+          </div>
+        </nav>
+        <div class="header__navbar__google-account">
+          <a class="header__navbar__google-account__link" href="">Account Google</a>
+        </div>
       </div>
     </div>
   </header>

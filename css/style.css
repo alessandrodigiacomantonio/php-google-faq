@@ -14,15 +14,45 @@ html {
   top: 0;
   left: 0;
   width: 100%;
+  border-bottom: 1px solid rgba(151,151,151,0.5);
+}
+.header__wrapper {
   padding: 2.2rem 2.2rem 0 2.2rem;
 }
 .header__privacy-terms {
   display: flex;
   align-items: center;
 }
-.header__privacy-terms__privacy {
+.header__privacy-terms__privacy,
+.header__navbar__google-account__link {
   font-size: 2.2rem;
   text-decoration: none;
   color: #5f6368;
   margin-left: 0.8rem;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar__site-pages {
+  display: flex;
+}
+.header__navbar__site-pages__page {
+  padding: 1.6rem 3.2rem 0.8rem 0rem;
+}
+.header__navbar__site-pages__page:last-child {
+  padding: 1.6rem 0 0.8rem; 
+}
+
+
+.__page__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.header__navbar__google-account__link  {
+  font-size: 1.5rem;
+}
+.--active-page {
+  color: #3367d6;
+  border-bottom: 2px solid #3367d6;
 }
