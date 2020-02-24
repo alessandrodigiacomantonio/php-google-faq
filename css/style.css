@@ -74,7 +74,7 @@ html {
   margin-top: 215px;
 }
 .main__section {
-  margin-top: 8rem;
+  margin-bottom: 8rem;
   padding: 1rem;
 
 }
@@ -90,4 +90,17 @@ html {
   color: rgba(0,0,0,0.87);
   margin-top: 2rem;
   white-space: pre-wrap;
+}
+
+.footer,
+.footer__language {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__language__icon {
+  margin-right: 0.5rem;
+}
+.footer__language__selection {
+  min-width: 150px;
 }
