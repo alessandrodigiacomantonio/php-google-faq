@@ -15,6 +15,7 @@ html {
   left: 0;
   width: 100%;
   border-bottom: 1px solid rgba(151,151,151,0.5);
+  z-index: 1;
 }
 .header__wrapper {
   padding: 2.2rem 2.2rem 0 2.2rem;
@@ -41,7 +42,7 @@ html {
   padding: 1.6rem 3.2rem 0.8rem 0rem;
 }
 .header__navbar__site-pages__page:last-child {
-  padding: 1.6rem 0 0.8rem; 
+  padding: 1.6rem 0 0.8rem;
 }
 
 
