@@ -13,7 +13,8 @@
 <body>
   <header class="header">
     <div class="header__privacy-terms">
-
+      <img class="header__privacy-terms__google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_74x24dp.png" alt="Google">
+      <a class="header__privacy-terms__privacy" href="">Privacy e termini</a>
     </div>
     <div class="header__navbar">
       <nav class="header__navbar__site-pages">
