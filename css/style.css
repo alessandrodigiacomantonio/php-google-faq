@@ -44,8 +44,6 @@ html {
 .header__navbar__site-pages__page:last-child {
   padding: 1.6rem 0 0.8rem;
 }
-
-
 .__page__title {
   font-size: 1.5rem;
   font-weight: 400;
@@ -56,4 +54,10 @@ html {
 .--active-page {
   color: #3367d6;
   border-bottom: 2px solid #3367d6;
+}
+
+.main,
+.footer {
+  max-width: 975px;
+  margin: 0 auto;
 }
